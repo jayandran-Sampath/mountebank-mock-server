@@ -1,0 +1,16 @@
+{ 
+  "predicates": [
+    {
+      "equals": {
+        "method": "POST",
+        "path": "/test"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "inject": "<%- stringify('./mocks/responses/secondApiResponse.js') %>" 
+    }
+  ]  
+
+}

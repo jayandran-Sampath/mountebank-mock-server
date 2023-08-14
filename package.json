@@ -1,0 +1,22 @@
+{
+  "name": "mountebank-mock-server",
+  "version": "1.0.0",
+  "description": "mock server using mounte bank",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx mb --configfile src/imposters.ejs --loglevel debug --allowInjection --pidfile mb.pid",
+    "stop": "npx mb stop --pidfile mb.pid",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mounte",
+    "bank",
+    "mock"
+  ],
+  "type": "module",
+  "author": "jayandran sampath",
+  "license": "ISC",
+  "dependencies": {
+    "mountebank": "^2.8.2"
+  }
+}

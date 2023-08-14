@@ -1,0 +1,10 @@
+{
+    "port": 4545,
+    "protocol": "http",
+    "name": "test-service",
+    "recordRequests": true,
+    "stubs": [
+     <% include ./firstApiMock.json %>,
+     <% include ./secondApiMock.json %>
+    ]
+   }
